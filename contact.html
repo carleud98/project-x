@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .contact-us-section {
+            background-color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 50px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-us-section h1 {
+            font-size: 36px;
+            color: #333333;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .contact-us-section p {
+            font-size: 18px;
+            color: #666666;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Form Styling */
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            transition: border 0.3s;
+        }
+
+        .contact-form input:focus, .contact-form textarea:focus {
+            border: 2px solid #4CAF50;
+            outline: none;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        /* Contact Info Styling */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .contact-info div {
+            max-width: 200px;
+            text-align: center;
+        }
+
+        .contact-info div i {
+            font-size: 40px;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .contact-info div p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-info div {
+                max-width: none;
+                margin-bottom: 30px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us-section">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Whether you have a question, need support, or just want to say hello, feel free to reach out using the form below.</p>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>1234 Address St, City, Country</p>
+            </div>
+            <div>
+                <i class="fas fa-phone-alt"></i>
+                <p>+123 456 7890</p>
+            </div>
+            <div>
+                <i class="fas fa-envelope"></i>
+                <p>contact@yourcompany.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FontAwesome for icons (Map, Phone, Email) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
